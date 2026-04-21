@@ -1,0 +1,4 @@
+catalog_size,items_recommended,coverage,system
+3567,10,0.0028,popularity
+3567,1470,0.41211,cooccurrence
+3567,2737,0.76731,cooc+ranker
