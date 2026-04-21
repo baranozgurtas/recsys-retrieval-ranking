@@ -1,8 +1,17 @@
-# Two-Stage Recommendation Pipeline
+# Two-Stage Recommendation System
 
-**Retrieval, ranking, and offline evaluation on MovieLens 1M.**
+A production-style recommender system that separates candidate retrieval and ranking,
+inspired by large-scale industry architectures (YouTube DNN, Amazon DSSM).
 
-A production-style session-based recommendation system built around the two-stage paradigm used in large-scale industry systems: a fast retrieval stage narrows the item space to a candidate set, and a supervised ranking model re-scores those candidates using engineered features. The pipeline is evaluated with standard ranking metrics and a full slice-based breakdown across session length, item popularity, and user density.
+Built to answer one question:
+
+> Can a learned ranking model recover long-tail items that frequency-based retrieval misses?
+
+**Result:** +117% Recall@10 on tail items. +86% catalog coverage over retrieval alone.
+
+---
+
+A session-based recommendation pipeline built around the two-stage paradigm used in large-scale industry systems: a fast retrieval stage narrows the item space to a candidate set, and a supervised ranking model re-scores those candidates using engineered features. The pipeline is evaluated with standard ranking metrics and a full slice-based breakdown across session length, item popularity, and user density.
 
 ---
 
