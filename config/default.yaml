@@ -1,0 +1,26 @@
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  ratings_file: ratings.dat
+  movies_file: movies.dat
+  users_file: users.dat
+  separator: "::"
+
+session:
+  gap_seconds: 1800
+  min_session_length: 2
+  max_session_length: 50
+
+split:
+  test_users_fraction: 0.2
+  val_users_fraction: 0.1
+  random_seed: 42
+
+retrieval:
+  top_k: 100
+
+ranking:
+  top_k: 10
+
+evaluation:
+  k_values: [5, 10, 20]
